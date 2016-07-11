@@ -1,7 +1,7 @@
 package pattern.creational.builder;
 
 /**
- * StringBuilder is the JDK example of builder pattern
+ * StringBuilder is the JDK example of builder pattern <br>
  * <a href="http://howtodoinjava.com/design-patterns/creational/builder-pattern-in-java/"> 
  * howtodoinjava.com/design-patterns/creational/builder-pattern-in-java/ </a>
  */

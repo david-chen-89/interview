@@ -16,5 +16,11 @@ public class First {
 		new Thread(() -> {
 			System.out.println("Run!");
 		}).start();
+
+		copy(names, names);
+	}
+
+	public static <T> void copy(List<T> dest, List<? extends T> src) {
+		// ...
 	}
 }

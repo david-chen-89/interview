@@ -20,7 +20,6 @@ public class User {
 		this.address = builder.address;
 	}
 
-	//All getter, and NO setter to provde immutability
 	public String getFirstName() {
 		return firstName;
 	}
@@ -39,11 +38,6 @@ public class User {
 
 	public String getAddress() {
 		return address;
-	}
-
-	@Override
-	public String toString() {
-		return "User: " + this.firstName + ", " + this.lastName + ", " + this.age + ", " + this.phone + ", " + this.address;
 	}
 
 	public static class UserBuilder {
@@ -73,15 +67,15 @@ public class User {
 			return this;
 		}
 
-		//Return the finally consrcuted User object
 		public User build() {
-			User user = new User(this);
-			validateUserObject(user);
-			return user;
+			return new User(this);
 		}
 
-		private void validateUserObject(User user) {
-			//Do some basic validations to check 
-		}
+	}
+
+	public static void main(String[] args) {
+		User.UserBuilder bd = new UserBuilder("David", "Chen");
+		@SuppressWarnings("unused")
+		User u = bd.age(16).phone("123").build();
 	}
 }

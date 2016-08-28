@@ -1,5 +1,5 @@
 package pattern.structural.proxy;
 
-public interface Sourceable {
+public interface SourceableI {
 	public void method();
 }

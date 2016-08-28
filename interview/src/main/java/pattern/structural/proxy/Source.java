@@ -1,6 +1,6 @@
 package pattern.structural.proxy;
 
-public class Source implements Sourceable {
+public class Source implements SourceableI {
 
 	@Override
 	public void method() {

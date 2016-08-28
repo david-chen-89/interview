@@ -1,11 +1,12 @@
 package pattern.structural.proxy;
 
 /**
- * Proxy pattern key point is at the override method
+ * Proxy pattern key point is Both proxy class and source class implement the same interface. Client 
+ * contact proxy to trigger source method.
  * EJB using proxy pattern
  *
  */
-public class Proxy implements Sourceable {
+public class Proxy implements SourceableI {
 
 	private Source source;
 

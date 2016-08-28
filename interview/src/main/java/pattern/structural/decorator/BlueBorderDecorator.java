@@ -1,9 +1,9 @@
 package pattern.structural.decorator;
 
-public class BlueBorderDecorator implements Shape {
-	protected Shape shape;
+public class BlueBorderDecorator implements ShapeI {
+	protected ShapeI shape;
 
-	public BlueBorderDecorator(Shape shape) {
+	public BlueBorderDecorator(ShapeI shape) {
 		this.shape = shape;
 	}
 

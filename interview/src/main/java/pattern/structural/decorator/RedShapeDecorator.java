@@ -1,9 +1,9 @@
 package pattern.structural.decorator;
 
-public class RedShapeDecorator implements Shape {
-	protected Shape shape;
+public class RedShapeDecorator implements ShapeI {
+	protected ShapeI shape;
 
-	public RedShapeDecorator(Shape shape) {
+	public RedShapeDecorator(ShapeI shape) {
 		this.shape = shape;
 	}
 

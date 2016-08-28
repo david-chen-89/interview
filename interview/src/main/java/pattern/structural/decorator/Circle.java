@@ -1,6 +1,6 @@
 package pattern.structural.decorator;
 
-public class Circle implements Shape {
+public class Circle implements ShapeI {
 
 	@Override
 	public void draw() {

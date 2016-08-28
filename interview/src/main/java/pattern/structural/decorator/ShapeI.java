@@ -1,5 +1,5 @@
 package pattern.structural.decorator;
 
-public interface Shape {
+public interface ShapeI {
 	void draw();
 }

@@ -1,5 +1,9 @@
 package algorithm.heap;
 
+/**
+ * represent with an array
+ *
+ */
 public class Heap {
 	private Node[] heapArray;
 	private int currentSize;

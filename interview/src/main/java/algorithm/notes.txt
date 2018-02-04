@@ -1,0 +1,19 @@
+XOR swap algorithm
+https://en.wikipedia.org/wiki/XOR_swap_algorithm
+
+public void swap(int x, int y) {
+	x ^= y;
+	y ^= x;
+	x ^= y;
+}
+
+Backtracking
+https://en.wikipedia.org/wiki/Backtracking
+
+-Pick a starting point
+-While the problem isn't solved
+       -For each path from the starting point
+             -Set that as the starting point and recurse
+             -If it returns true, then return true
+       -Undo the current move (since none of the options panned out)
+       -Return false
